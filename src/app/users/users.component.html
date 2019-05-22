@@ -1,0 +1,11 @@
+<h2>Users</h2>
+
+<ul class="heroes">
+  <li *ngFor="let user of users">
+    <p>{{user.id}}</p>
+    <p>{{user.first_name}}</p>
+    <p>{{user.last_name}}</p>
+    <img [src]="user.avatar">
+    <p>{{user.email}}</p>
+  </li>
+</ul>
